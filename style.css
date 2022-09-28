@@ -1,0 +1,144 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body
+{
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+#container 
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: hsl(213, 19%, 18%);
+    width: 350px;
+    padding: 30px;
+    overflow: hidden;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#star
+{
+    background-color: hsl(216, 12%, 8%);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#text h1
+{
+    color: white;
+}
+
+#container #text p
+{
+    text-align: justify;
+    padding: 0;
+}
+
+#ratings
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-number-clicked, .rating-number
+{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-number
+{
+    background-color: hsl(216, 12%, 8%);
+}
+
+.rating-number-clicked
+{
+    color: white;
+    background-color: hsl(217, 12%, 63%);
+}
+
+.rating-number-clicked
+{
+    cursor: pointer;
+}
+
+.rating-number:hover
+{
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+#submit
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 40px;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    font-weight: 400;
+    border-radius: 20px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#submit:hover
+{
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+    cursor: pointer;
+}
+
+#container img
+{
+    max-width: 45%;
+    align-self: center;
+}
+
+#rated 
+{
+    align-self: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    background-color:hsl(216, 12%, 8%);
+    color: hsl(25, 97%, 53%);
+}
+
+#container h1
+{
+    align-self: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+    color: white;
+}
+
+#container p
+{
+    margin-top: 15px;
+    padding: 0 5px;
+    text-align: center;
+}
+
