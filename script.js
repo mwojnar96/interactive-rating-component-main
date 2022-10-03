@@ -1,14 +1,14 @@
-var rating = "";
-var ratings = document.querySelectorAll('.rating-number');
+let rating = "";
+const ratings = document.querySelectorAll('.rating-number');
 
-for(i=0; i < ratings.length; i++)
+for(let i of ratings)
 {
     ratings[i].addEventListener('click', getRating);
 }
 
 function getRating()
 {
-    var clicked = document.querySelectorAll('.rating-number-clicked');
+    const clicked = document.querySelectorAll('.rating-number-clicked');
 
     if(clicked.length>0)
     {
@@ -19,21 +19,21 @@ function getRating()
     rating = this.getAttribute('value');   
 }
 
-var submit = document.querySelector('#submit');
+const submit = document.querySelector('#submit');
 submit.addEventListener('click', thankYou);
 
-function thankYou()
+function redirectToThankYouPage()
 {
-    if(rating=="")
+    if(rating==="")
     {
         alert("Choose rate!")
     }
     else
     {
-        var container = document.querySelector('#container');
-        var image = "<img src='./images/illustration-thank-you.svg' alt='thank you image'/>"
-        var rate = "<div id='rated'>You selected "+rating+" out of 5</div>"
-        var text = 
+        const container = document.querySelector('#container');
+        const image = "<img src='./images/illustration-thank-you.svg' alt='thank you image'/>"
+        const rate = "<div id='rated'>You selected "+rating+" out of 5</div>"
+        const text = 
         "<h1>Thank you!</h1>"+
         "<p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>";    
         container.innerHTML = image + rate + text;    
